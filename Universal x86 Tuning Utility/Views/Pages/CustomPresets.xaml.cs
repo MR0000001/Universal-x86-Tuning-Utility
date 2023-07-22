@@ -168,7 +168,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
             if (commandValues != "" && commandValues != null)
             {
                 RyzenAdj_To_UXTU.Translate(commandValues);
-                ToastNotification.ShowToastNotification("Preset Applied", $"Your custom preset settings have been applied!");
+                //ToastNotification.ShowToastNotification("Preset Applied", $"Your custom preset settings have been applied!");
             }
 
             Settings.Default.CommandString = commandValues;
@@ -309,7 +309,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
                             cbxPowerPreset.Items.Add(presetName);
                         }
 
-                        ToastNotification.ShowToastNotification("Preset Saved", $"Your preset {tbxPresetName.Text} has been saved successfully!");
+                        //ToastNotification.ShowToastNotification("Preset Saved", $"Your preset {tbxPresetName.Text} has been saved successfully!");
                     }
                 }
 
@@ -408,7 +408,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
                             cbxPowerPreset.Items.Add(presetName);
                         }
 
-                        ToastNotification.ShowToastNotification("Preset Saved", $"Your preset {tbxPresetName.Text} has been saved successfully!");
+                        //ToastNotification.ShowToastNotification("Preset Saved", $"Your preset {tbxPresetName.Text} has been saved successfully!");
                     }
                 }
 
@@ -456,7 +456,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
                             cbxPowerPreset.Items.Add(presetName);
                         }
 
-                        ToastNotification.ShowToastNotification("Preset Saved", $"Your preset {tbxPresetName.Text} has been saved successfully!");
+                        //ToastNotification.ShowToastNotification("Preset Saved", $"Your preset {tbxPresetName.Text} has been saved successfully!");
                     }
                 }
             }
@@ -491,7 +491,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
                             cbxPowerPreset.Items.Add(presetName);
                         }
 
-                        ToastNotification.ShowToastNotification("Preset Deleted", $"Your preset {deletePresetName} has been deleted successfully!");
+                        //ToastNotification.ShowToastNotification("Preset Deleted", $"Your preset {deletePresetName} has been deleted successfully!");
                     }
                 }
 
@@ -515,7 +515,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
                             cbxPowerPreset.Items.Add(presetName);
                         }
 
-                        ToastNotification.ShowToastNotification("Preset Deleted", $"Your preset {deletePresetName} has been deleted successfully!");
+                        //ToastNotification.ShowToastNotification("Preset Deleted", $"Your preset {deletePresetName} has been deleted successfully!");
                     }
                 }
 
@@ -539,7 +539,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
                             cbxPowerPreset.Items.Add(presetName);
                         }
 
-                        ToastNotification.ShowToastNotification("Preset Deleted", $"Your preset {deletePresetName} has been deleted successfully!");
+                        //ToastNotification.ShowToastNotification("Preset Deleted", $"Your preset {deletePresetName} has been deleted successfully!");
                     }
                 }
             } catch (Exception ex) {  }

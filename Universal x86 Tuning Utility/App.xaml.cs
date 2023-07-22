@@ -198,7 +198,7 @@ namespace Universal_x86_Tuning_Utility
 
             if (isUpdateAvailable)
             {
-                ToastNotification.ShowToastNotification("New Update Available!", $"Head to the settings menu to easily download the new Universal x86 Tuning Utility update!");
+                //ToastNotification.ShowToastNotification("New Update Available!", $"Head to the settings menu to easily download the new Universal x86 Tuning Utility update!");
             }
         }
 

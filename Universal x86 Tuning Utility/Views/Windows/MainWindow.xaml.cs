@@ -92,12 +92,12 @@ namespace Universal_x86_Tuning_Utility.Views.Windows
                             Settings.Default.CommandString = Settings.Default.acCommandString;
                             Settings.Default.Save();
                             await Task.Run(() => RyzenAdj_To_UXTU.Translate(Settings.Default.acCommandString));
-                            ToastNotification.ShowToastNotification("Charge Preset Applied!", $"Your charge preset settings have been applied!");
+                            //ToastNotification.ShowToastNotification("Charge Preset Applied!", $"Your charge preset settings have been applied!");
                         }
                         else
                         {
                             RyzenAdj_To_UXTU.Translate(Settings.Default.CommandString);
-                            ToastNotification.ShowToastNotification("Settings Reapplied!", $"Your last applied settings have been reapplied!");
+                            //ToastNotification.ShowToastNotification("Settings Reapplied!", $"Your last applied settings have been reapplied!");
                         }
                     }
                     else
@@ -107,12 +107,12 @@ namespace Universal_x86_Tuning_Utility.Views.Windows
                             Settings.Default.CommandString = Settings.Default.dcCommandString;
                             Settings.Default.Save();
                             await Task.Run(() => RyzenAdj_To_UXTU.Translate(Settings.Default.dcCommandString));
-                            ToastNotification.ShowToastNotification("Discharge Preset Applied!", $"Your discharge preset settings have been applied!");
+                            //ToastNotification.ShowToastNotification("Discharge Preset Applied!", $"Your discharge preset settings have been applied!");
                         }
                         else
                         {
                             RyzenAdj_To_UXTU.Translate(Settings.Default.CommandString);
-                            ToastNotification.ShowToastNotification("Settings Reapplied!", $"Your last applied settings have been reapplied!");
+                            //ToastNotification.ShowToastNotification("Settings Reapplied!", $"Your last applied settings have been reapplied!");
                         }
                     }
                 }
@@ -275,7 +275,7 @@ namespace Universal_x86_Tuning_Utility.Views.Windows
                             else if (Settings.Default.resumePreset.Contains("PM - Ext")) Settings.Default.premadePreset = 3;
                             Settings.Default.Save();
                             await Task.Run(() => RyzenAdj_To_UXTU.Translate(Settings.Default.acCommandString));
-                            ToastNotification.ShowToastNotification("Charge Preset Applied!", $"Your charge preset settings have been applied!");
+                            //ToastNotification.ShowToastNotification("Charge Preset Applied!", $"Your charge preset settings have been applied!");
                         }
                     }
                     else
@@ -289,7 +289,7 @@ namespace Universal_x86_Tuning_Utility.Views.Windows
                             else if (Settings.Default.resumePreset.Contains("PM - Ext")) Settings.Default.premadePreset = 3;
                             Settings.Default.Save();
                             await Task.Run(() => RyzenAdj_To_UXTU.Translate(Settings.Default.dcCommandString));
-                            ToastNotification.ShowToastNotification("Discharge Preset Applied!", $"Your discharge preset settings have been applied!");
+                            //ToastNotification.ShowToastNotification("Discharge Preset Applied!", $"Your discharge preset settings have been applied!");
                         }
                     }
                 }
@@ -305,7 +305,7 @@ namespace Universal_x86_Tuning_Utility.Views.Windows
                         else if (Settings.Default.resumePreset.Contains("PM - Ext")) Settings.Default.premadePreset = 3;
                         Settings.Default.Save();
                         Task.Run(() => RyzenAdj_To_UXTU.Translate(Settings.Default.resumeCommandString));
-                        ToastNotification.ShowToastNotification("Resume Preset Applied!", $"Your resume preset settings have been applied!");
+                        //ToastNotification.ShowToastNotification("Resume Preset Applied!", $"Your resume preset settings have been applied!");
                     }
                 }
             }

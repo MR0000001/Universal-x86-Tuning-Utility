@@ -110,7 +110,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
 
                 RyzenAdj_To_UXTU.Translate(PerformancePreset);
 
-                ToastNotification.ShowToastNotification("Performance Preset Applied!", $"The performance premade power preset has been applied!");
+                //ToastNotification.ShowToastNotification("Performance Preset Applied!", $"The performance premade power preset has been applied!");
 
                 Settings.Default.CommandString = PerformancePreset;
                 Settings.Default.premadePreset = 2;
@@ -143,7 +143,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
 
                 RyzenAdj_To_UXTU.Translate(ExtremePreset);
 
-                ToastNotification.ShowToastNotification("Extreme Preset Applied!", $"The extreme premade power preset has been applied!");
+                //ToastNotification.ShowToastNotification("Extreme Preset Applied!", $"The extreme premade power preset has been applied!");
 
                 Settings.Default.premadePreset = 3;
                 Settings.Default.Save();
@@ -166,7 +166,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
 
                 RyzenAdj_To_UXTU.Translate(EcoPreset);
 
-                ToastNotification.ShowToastNotification("Eco Preset Applied!", $"The eco premade power preset has been applied!");
+                //ToastNotification.ShowToastNotification("Eco Preset Applied!", $"The eco premade power preset has been applied!");
 
                 Settings.Default.CommandString = EcoPreset;
                 Settings.Default.premadePreset = 0;
@@ -190,7 +190,7 @@ namespace Universal_x86_Tuning_Utility.Views.Pages
 
                 RyzenAdj_To_UXTU.Translate(BalPreset);
 
-                ToastNotification.ShowToastNotification("Balanced Preset Applied!", $"The balanced premade power preset has been applied!");
+                //ToastNotification.ShowToastNotification("Balanced Preset Applied!", $"The balanced premade power preset has been applied!");
 
                 Settings.Default.CommandString = BalPreset;
                 Settings.Default.premadePreset = 1;
